@@ -15,24 +15,24 @@
             <div class="row row-content">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
-                    <h2 class="loginhead">Sign in</h2>
+                    <h2 class="loginhead">SIGN IN</h2>
                     <form class="login">
                         <div class="form-group row">
                             <label for="firstname" class="col-md-3 col-form-label">First Name</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                <input type="text" required class="form-control" id="firstname" onblur="checkfeild1();" name="firstname"  placeholder="First Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="lastname" class="col-md-3 col-form-label">Last Name</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                <input type="text" class="form-control" id="lastname" onblur="checkfeild2();" name="lastname"  placeholder="Last Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="e-mail" class="col-md-3 col-form-label">E-mail</label>
                             <div class="col-md-8">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="e-mail">
+                                <input type="text" class="form-control" id="email" onblur="mail();" name="email" placeholder="e-mail">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -56,13 +56,13 @@
                         <div class="form-group row">
                             <label for="password" class="col-md-3 col-form-label">Password</label>
                             <div class="col-md-8">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                                <input type="password" class="form-control" id="password" onblur="validatepassword();" name="password" placeholder="password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="conformpassword" class="col-md-3 col-form-label">Conform Password</label>
                             <div class="col-md-8">
-                                <input type="password" class="form-control" id="conformpassword" name="conformpassword" placeholder="conform password">
+                                <input type="password" class="form-control" id="conformpassword" onblur="conform();" name="conformpassword" placeholder="conform password">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -74,10 +74,24 @@
                         </div>
                         <div class="form-group row">
                             <div class="offset-md-3 col-md-8">
-                                <button style="width:270px;height:40px;border-radius:5px;" class="btn btn-success">Submit</button>
+                                <button  style="width:270px;height:40px;border-radius:5px;" onclick="final()" class="btn btn-success">Submit</button>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-footer">
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <span id="message1"></span>
+                    <span id="message2"></span>
+                    <span id="message3"></span>
+                    <span id="message4"></span>
+                    <span id="message5"></span>
+                    <span id="message6"></span>
+                    <span id="message7"></span>
                 </div>
             </div>
         </div>
@@ -101,10 +115,9 @@
 
 
 
-
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

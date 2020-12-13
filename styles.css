@@ -1,6 +1,6 @@
 .login
 {
-    padding:40px 0px 40px 30px;
+    padding:40px 0px 10px 30px;
     border:2px ridge;
     border-radius:25px;
 }
@@ -20,4 +20,8 @@
 .check
 {
     padding-left:40px;
+}
+.row-footer
+{
+    border:2px solid black;
 }
