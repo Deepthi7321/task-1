@@ -1,0 +1,23 @@
+.login
+{
+    padding:40px 0px 40px 30px;
+    border:2px ridge;
+    border-radius:25px;
+}
+.loginhead
+{
+    padding:20px 5px 15px 5px;
+    margin-left:300px;
+}
+.row-content
+{
+    margin-top:50px;
+}
+.form-group
+{
+    padding-bottom:10px;
+}
+.check
+{
+    padding-left:40px;
+}

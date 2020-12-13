@@ -1,8 +1,110 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="styles.css">
         <title>hello</title>
     </head>
     <body>
-        <h1>Hello world</h1>
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <h2 class="loginhead">Sign in</h2>
+                    <form class="login">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-3 col-form-label">First Name</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-3 col-form-label">Last Name</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="e-mail" class="col-md-3 col-form-label">E-mail</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="e-mail">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gender" class="col-md-3 col-form-label">Gender</label>
+                            <div class="col-md-8">
+                                <input type="radio" name="gender" vaue="male"><span style="padding:0px 20px 0px 4px">Male</span>
+                                <input type="radio" name="gender" vaue="male"><span style="padding:0px 20px 0px 4px">Female</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="institute" class="col-md-3 col-form-label">Institute</label>
+                            <div class="col-md-8">
+                                <select class="form-control">
+                                    <option>VIT, Vellore</option>
+                                    <option>VIT, Chennai</option>
+                                    <option>VIT, Amaravathi</option>
+                                    <option>VIT, Madhya Pradesh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-md-3 col-form-label">Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="conformpassword" class="col-md-3 col-form-label">Conform Password</label>
+                            <div class="col-md-8">
+                                <input type="password" class="form-control" id="conformpassword" name="conformpassword" placeholder="conform password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <dv class="col-md-3"></dv>
+                            <div class="col-md-8 check">
+                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-3 col-md-8">
+                                <button style="width:270px;height:40px;border-radius:5px;" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
